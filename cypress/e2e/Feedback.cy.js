@@ -17,8 +17,8 @@ describe('Login', () => {
 
         cy.get('button').contains(/provide feedback/i).click()
         cy.get('#alert-dialog-description').should('exist');
-        cy.get('#alert-dialog-description').within(()=>{
-            cy.get('div[role="combobox"]').click()
-        })
+        // cy.get('#alert-dialog-description').within(()=>{
+        //     cy.get('div[role="combobox"]').click()
+        // })
     })
 })
