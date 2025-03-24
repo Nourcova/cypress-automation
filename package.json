@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:chrome": "cypress run --borwser chrome --spec cypress/e2e/*.cy.js",
+
     "test1": "echo \"Error: no test specified\" && exit 1",
     "test2": "npx cypress run",
     "cy:parallel": "cypress-parallel -d cypress/e2e/ -t 5 -s test2",
     "clean:reports": "rm -rf cypress/report/mochawesome-report && rm -rf cypress/report/output.json",
-    "test": "npm run clean:reports && npx cypress run --reporter mochawesome",
-    "merge:reports": "npx mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json",
-    "generate:html": "npx marge cypress/report/output.json --reportDir ./ --inline",
-    "report": "npm run merge:reports && npm run generate:html"
+    "test": "npm run clean:reports && npx cypress run --reporter mochawesome"
   },
   "keywords": [],
   "author": "",

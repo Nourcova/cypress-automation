@@ -9,12 +9,13 @@ module.exports = defineConfig({
     },
   },
   reporter: 'cypress-mochawesome-reporter',
-  "reporterOptions": {
+  reporterOptions: {
+    reportDir: 'cypress/report',
     charts: true,
     reportPageTitle: 'Khalifa Univercity Automation',
     embeddedScreenshots: true,
     inlineAssets: true,
     video: true,
     saveAllAttempts: false,
-   }
+   },
 });
