@@ -5,12 +5,7 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:chrome": "cypress run --borwser chrome --spec cypress/e2e/*.cy.js",
-
-    "test1": "echo \"Error: no test specified\" && exit 1",
-    "test2": "npx cypress run",
-    "cy:parallel": "cypress-parallel -d cypress/e2e/ -t 5 -s test2",
-    "clean:reports": "rm -rf cypress/report/mochawesome-report && rm -rf cypress/report/output.json",
-    "test": "npm run clean:reports && npx cypress run --reporter mochawesome"
+    "cy:parallel": "cypress-parallel -d cypress/e2e/ -t 5 -s test2"
   },
   "keywords": [],
   "author": "",
