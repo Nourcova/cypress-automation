@@ -10,8 +10,8 @@ describe('Login Page', () => {
 
   it('LoginTC_001, Verify successful login with valid credentials', () => {
 
-    cy.get('input[name=username]').type("102")
-    cy.get('input[name=password]').type("102ah")
+    cy.get('input[name=username]').type("1020")
+    cy.get('input[name=password]').type("1020us")
 
     cy.contains('button', 'Submit').click(); // Click the submit button
 
@@ -21,7 +21,7 @@ describe('Login Page', () => {
   })
 
   it('LoginTC_002, Verify error message for incorrect password', () => {
-    cy.get('input[name=username]').type("102")
+    cy.get('input[name=username]').type("1020")
     cy.get('input[name=password]').type("102ahh")
 
     cy.contains('button', 'Submit').click(); // Click the submit button
@@ -47,8 +47,8 @@ describe('Login Page', () => {
   })
 
   it('CoursesTC_004, Verify Resource button for each course, chapter and for each document is working', () => {
-    cy.get('input[name=username]').type("102")
-    cy.get('input[name=password]').type("102ah")
+    cy.get('input[name=username]').type("1020")
+    cy.get('input[name=password]').type("1020us")
 
     cy.contains('button', 'Submit').click(); // Click the submit button
 
@@ -72,8 +72,8 @@ describe('Login Page', () => {
   })
 
   it('CoursesTC_005, Verify Stard Session and End Session are working', () => {
-    cy.get('input[name=username]').type("102")
-    cy.get('input[name=password]').type("102ah")
+    cy.get('input[name=username]').type("1020")
+    cy.get('input[name=password]').type("1020us")
 
     cy.contains('button', 'Submit').click(); // Click the submit button
 
@@ -113,8 +113,8 @@ describe('Login Page', () => {
   })
 
   it('CoursesTC_006, Verify Record from the input is working', () => {
-    cy.get('input[name=username]').type("102")
-    cy.get('input[name=password]').type("102ah")
+    cy.get('input[name=username]').type("1020")
+    cy.get('input[name=password]').type("1020us")
 
     cy.contains('button', 'Submit').click(); // Click the submit button
 
@@ -133,8 +133,8 @@ describe('Login Page', () => {
   })
 
   it('CoursesTC_007, Verify Record from Avatar is working', () => {
-    cy.get('input[name=username]').type("102")
-    cy.get('input[name=password]').type("102ah")
+    cy.get('input[name=username]').type("1020")
+    cy.get('input[name=password]').type("1020us")
 
     cy.contains('button', 'Submit').click(); // Click the submit button
 
