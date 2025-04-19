@@ -17,5 +17,5 @@ module.exports = defineConfig({
     inlineAssets: true,
     video: true,
     saveAllAttempts: false,
-   },
+  },
 });
